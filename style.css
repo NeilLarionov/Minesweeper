@@ -1,0 +1,51 @@
+body{
+    margin:0;
+    overflow: hidden;
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    text-align: center;
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#minesRemaining-label{
+    padding-top: 15px;
+}
+#minefield{
+height: 50%;
+margin: 0 auto;
+padding: 10% 0;
+width: 30%;
+min-height: 400px;
+min-width: 400px;
+display: flex;
+flex-wrap: wrap;
+}
+
+.spot{
+    width: 10%;
+    height: 10%;
+    background-color: gray;
+    text-align: center;
+}
+.spot:hover:not(.pressed){
+    background-color: yellow;
+}
+.mine{
+
+}
+.flag{
+    background-color: red;
+}
+
+.spot:active:not(.pressed) {
+    background-color: orange;
+}
+.pressed{
+    background-color: white;
+    font-size: large;
+    font-weight: bold;
+}
